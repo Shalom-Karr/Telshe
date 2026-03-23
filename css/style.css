@@ -546,3 +546,80 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 
+
+/* Memorial Sponsor Cards */
+.memorial-card {
+    background: transparent url('../img/sponsor-card.png') no-repeat center/100% 100%;
+    border-radius: 52px 0;
+    padding: 2.5rem;
+    height: 100%;
+    min-height: 440px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.memorial-card:hover {
+    transform: translateY(-5px);
+}
+
+.memorial-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memorial-amount {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.memorial-amount sub {
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 0.25rem;
+}
+
+.memorial-card p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.memorial-card .btn {
+    background-color: #ffcf7a;
+    color: #654536;
+    border-radius: 20px 0 50px 20px;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: none;
+}
+
+.memorial-card .btn:hover {
+    background-color: #ffffff;
+    color: #654536;
+}
+
