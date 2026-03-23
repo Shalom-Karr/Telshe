@@ -162,7 +162,7 @@ img { max-width: 100%; height: auto; display: block; }
     align-items: center;
     justify-content: center;
     background-color: var(--primary);
-    background-image: url('https://cdn.logo.cardknox.com/4/1/1/1/2/6289f198f9a5fb56b915b3355_paymentsite_3195.png?v=638454352410307296');
+    background-image: url('../img/telshe-campus.png');
     background-size: cover;
     background-position: center 80%; /* Centers on the building, hiding the sky text */
     background-attachment: fixed;
@@ -486,7 +486,7 @@ img { max-width: 100%; height: auto; display: block; }
     letter-spacing: 1.5px;
 }
 .profile-header {
-    background: linear-gradient(to bottom, rgba(10, 35, 66, 0.9), rgba(10, 35, 66, 0.95)), url('https://cdn.logo.cardknox.com/4/1/1/1/2/6289f198f9a5fb56b915b3355_paymentsite_3195.png?v=638454352410307296');
+    background: linear-gradient(to bottom, rgba(10, 35, 66, 0.9), rgba(10, 35, 66, 0.95)), url('../img/telshe-campus.png');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -622,4 +622,5 @@ img { max-width: 100%; height: auto; display: block; }
     background-color: #ffffff;
     color: #654536;
 }
+
 
