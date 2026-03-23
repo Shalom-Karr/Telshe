@@ -1,3 +1,1 @@
-Telshe Yeshiva Website - Prototype 
-
-https://TelsheYeshiva.pages.dev
+Telshe Yeshiva Website - Prototype https://TelsheYeshiva.pages.dev
