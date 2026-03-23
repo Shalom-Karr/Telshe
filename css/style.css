@@ -3,22 +3,20 @@
    ========================================= */
 
 :root {
-    --primary: #0a2342; /* Deep Navy Blue */
-    --primary-light: #163c6a;
-    --secondary: #d4af37; /* Telshe Gold */
+    --primary: #0f1c2e; 
+    --primary-light: #1c3352;
+    --secondary: #d4af37; 
     --secondary-hover: #b08d28;
-    
-    --text-dark: #1e293b;
+    --text-dark: #111827;
     --text-light: #f8fafc;
-    --text-muted: #64748b;
-    --bg-light: #f1f5f9;
+    --text-muted: #475569;
+    --bg-light: #f8fafc;
     --white: #ffffff;
-    
-    --radius: 8px;
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
-    --transition: all 0.3s ease;
+    --radius: 16px;
+    --shadow-sm: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 12px 35px -5px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -31,7 +29,7 @@ html {
     scroll-behavior: smooth;
     font-family: 'Merriweather', 'Georgia', serif;
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 body {
@@ -67,8 +65,8 @@ img { max-width: 100%; height: auto; display: block; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 2rem;
-    border-radius: var(--radius);
+    padding: 0.85rem 2.25rem;
+    border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
     border: none;
@@ -97,10 +95,12 @@ img { max-width: 100%; height: auto; display: block; }
     top: 0;
     left: 0;
     right: 0;
-    background: var(--primary);
+    background: rgba(15, 28, 46, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 1rem 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .nav-container {
@@ -208,8 +208,8 @@ img { max-width: 100%; height: auto; display: block; }
     background: var(--white);
     padding: 3rem;
     border-radius: var(--radius);
-    box-shadow: var(--shadow-md);
-    border-top: 4px solid var(--secondary);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .card h3 {
@@ -230,7 +230,7 @@ img { max-width: 100%; height: auto; display: block; }
     min-height: 1100px;
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     background: var(--white);
     margin-top: 2rem;
 }
@@ -443,7 +443,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .rebbi-card {
     background: var(--white);
-    border-radius: 12px;
+    border-radius: var(--radius);
     padding: 2.5rem 2rem;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.04);
@@ -486,7 +486,7 @@ img { max-width: 100%; height: auto; display: block; }
     letter-spacing: 1.5px;
 }
 .profile-header {
-    background: linear-gradient(to bottom, rgba(10, 35, 66, 0.9), rgba(10, 35, 66, 0.95)), url('../img/telshe-campus.png');
+    background: radial-gradient(circle at center, rgba(15,28,46,0.85) 0%, rgba(15,28,46,0.98) 100%), url('../img/telshe-campus.png');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -497,7 +497,7 @@ img { max-width: 100%; height: auto; display: block; }
     background: var(--white);
     border-radius: 16px;
     padding: 4rem;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     margin-top: -4rem;
     position: relative;
     z-index: 10;
@@ -518,15 +518,15 @@ img { max-width: 100%; height: auto; display: block; }
 .pillar-card {
     background: var(--white);
     padding: 3rem 2rem;
-    border-radius: 12px;
+    border-radius: var(--radius);
     text-align: center;
     box-shadow: var(--shadow-sm);
-    border-bottom: 4px solid var(--secondary);
+    border: 1px solid rgba(0,0,0,0.04);
     transition: var(--transition);
 }
 .pillar-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 .pillar-icon {
     width: 64px;
@@ -602,7 +602,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
-    line-height: 1.6;
+    line-height: 1.7;
     flex-grow: 1;
 }
 
@@ -623,4 +623,9 @@ img { max-width: 100%; height: auto; display: block; }
     color: #654536;
 }
 
+
+
+
+
+.bg-light { background-color: #f1f5f9; }
 
