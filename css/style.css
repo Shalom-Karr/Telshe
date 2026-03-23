@@ -83,22 +83,17 @@ img { max-width: 100%; height: auto; display: block; }
 
 .btn-primary {
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--white);
     box-shadow: var(--shadow-sm);
 }
 .btn-primary:hover {
     background-color: var(--secondary);
-    color: var(--primary);
-    border-color: var(--secondary);
-    transform: translateY(-2px);
+    color: var(--text-dark); /* Crisp off-black for max legibility on gold */
+    transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
 
-.btn-primary:hover {
-    background-color: var(--secondary-hover);
-    transform: translateY(-2px);
-    color: var(--white);
-}
+
 
 /* Navbar */
 .navbar {
@@ -257,10 +252,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Footer */
 .footer {
-    background: var(--primary);
-    color: #94a3b8;
-    padding: 4rem 0 2rem;
+    background: #111827; /* Rich, dark slate/charcoal */
+    color: #9ca3af; /* Soft slate text */
+    padding: 5rem 0 2rem;
     font-family: 'Inter', sans-serif;
+    border-top: 4px solid var(--primary); /* A burgundy accent line to tie it to the brand */
 }
 
 .footer h4 { color: var(--white); margin-bottom: 1.5rem; }
@@ -670,6 +666,8 @@ img { max-width: 100%; height: auto; display: block; }
 .purim-banner { background: var(--primary); color: var(--secondary); text-align: center; padding: 0.6rem 1rem; font-family: 'Inter', sans-serif; font-size: 0.95rem; position: fixed; top: 0; left: 0; right: 0; z-index: 1050; font-weight: 700; letter-spacing: 0.5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
 .purim-banner a { color: var(--secondary); text-decoration: none; }
 .purim-banner a:hover { text-decoration: underline; }
+
+
 
 
 
