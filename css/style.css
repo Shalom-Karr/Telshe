@@ -451,6 +451,8 @@ img { max-width: 100%; height: auto; display: block; }
     margin: 1rem auto 0;
 }
 .rebbi-card {
+    position: relative;
+    z-index: 1;
     background: var(--white);
     border-radius: var(--radius);
     padding: 3rem 2.5rem;
@@ -681,6 +683,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 
 .nav-links a.btn::after { display: none !important; }
+
 
 
 
