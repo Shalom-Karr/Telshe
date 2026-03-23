@@ -8,7 +8,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -28,6 +28,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="rebbeim.html">Rebbeim</a></li>
                 <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
             </ul>
         </div>
@@ -36,24 +37,59 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content fade-in">
-            <h1>Carrying the Torch of Torah</h1>
-            <p>Welcome to the Rabbinical College of Telshe in Wickliffe, Ohio. A premier institution of Talmudic scholarship and Jewish heritage.</p>
-            <a href="donate.html" class="btn btn-primary">Support the Yeshiva</a>
+            <h1 style="text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Carrying the Torch of Torah</h1>
+            <p style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Welcome to the Rabbinical College of Telshe in Wickliffe, Ohio. A premier institution of Talmudic scholarship and authentic Jewish heritage.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="donate.html" class="btn btn-primary">Support the Yeshiva</a>
+                <a href="rebbeim.html" class="btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(5px);">Meet Our Rebbeim</a>
+            </div>
         </div>
     </header>
 
-    <!-- Quick Links / Info Cards -->
+    <!-- Core Pillars -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">The Pillars of Telshe</h2>
+            <div class="grid-3">
+                <div class="pillar-card fade-in">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h3>Torah Study</h3>
+                    <p>Immersing students in the rigorous "Telzer Derech"—a deeply analytical approach to Talmudic study that sharpens the mind and soul.</p>
+                </div>
+                <div class="pillar-card fade-in" style="transition-delay: 100ms;">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3>Mussar (Ethics)</h3>
+                    <p>Emphasizing personal character development, ethical conduct, and profound reverence for the teachings of our sages.</p>
+                </div>
+                <div class="pillar-card fade-in" style="transition-delay: 200ms;">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Community Leadership</h3>
+                    <p>Preparing the next generation of Rabbis, educators, and lay leaders to guide and inspire Jewish communities across the globe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Highlight -->
     <section class="section">
         <div class="container">
-            <div class="grid-2">
-                <div class="card slide-right">
-                    <h3>Our History</h3>
-                    <p style="margin-bottom: 1.5rem;">Founded in 1875 in Telšiai, Lithuania, the yeshiva was rebuilt from the ashes of World War II by Rabbis Eliyahu Meir Bloch and Chaim Mordechai Katz. Today, it stands as a cornerstone of Torah education in America.</p>
-                    <a href="about.html" style="font-weight: 600; text-decoration: underline;">Read our story</a>
+            <div class="grid-2 align-center">
+                <div class="slide-right">
+                    <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;">A Legacy Reborn</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.8;">Founded in 1875 in Telšiai, Lithuania, the yeshiva was rebuilt from the ashes of World War II by Rabbis Eliyahu Meir Bloch and Chaim Mordechai Katz. Escaping the destruction of Europe, they replanted the seeds of Torah in Cleveland, Ohio.</p>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.8;">Today, standing on a beautiful 57-acre campus in Wickliffe, the Rabbinical College of Telshe serves as a living testament to the eternity of the Jewish spirit and the unbroken chain of transmission.</p>
+                    <a href="about.html" class="btn btn-primary">Discover Our Full History</a>
                 </div>
-                <div class="card slide-left">
-                    <h3>Academic Programs</h3>
-                    <p style="margin-bottom: 1.5rem;">We offer comprehensive theological studies through our High School (Mechina), undergraduate and graduate Rabbinical programs, and Teachers Seminary, preparing the next generation of Jewish educators and leaders.</p>
+                <div class="slide-left" style="position: relative;">
+                    <!-- Decorative border -->
+                    <div style="position: absolute; inset: -15px; border: 2px solid var(--secondary); border-radius: 12px; z-index: -1; transform: translate(15px, 15px);"></div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telz_Yeshiva_-_Wickliffe%2C_Ohio.jpg/1200px-Telz_Yeshiva_-_Wickliffe%2C_Ohio.jpg" alt="Telshe Yeshiva Campus" style="border-radius: 12px; box-shadow: var(--shadow-md); width: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
