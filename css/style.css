@@ -124,8 +124,6 @@ img { max-width: 100%; height: auto; display: block; }
     height: 50px;
     width: auto;
     object-fit: contain;
-    /* Invert colors to make the black logo white for the dark header */
-    filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -546,4 +544,5 @@ img { max-width: 100%; height: auto; display: block; }
         padding: 2rem;
     }
 }
+
 
