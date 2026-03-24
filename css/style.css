@@ -118,6 +118,8 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .logo-wrapper { display: flex; align-items: center; text-decoration: none; gap: 1rem; color: var(--primary);
@@ -132,6 +134,11 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.logo-wrapper {
+    flex-shrink: 0;
 }
 
 .nav-links a {
@@ -846,6 +853,8 @@ img { max-width: 100%; height: auto; display: block; }
     .nav-item-wide { display: block !important; }
     .nav-item-dropdown { display: none !important; }
 }
+
+
 
 
 
