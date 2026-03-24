@@ -843,23 +843,32 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--primary) !important;
 }
 
-/* Global Dropdown Rule (Desktop & Tablet) */
+/* --- Navigation Bar One-Line Guarantee --- */
 @media (min-width: 769px) {
-    .nav-item-wide { display: none !important; }
-    .nav-item-dropdown { display: block !important; }
+    .nav-container { flex-wrap: nowrap !important; }
+    .nav-links { flex-wrap: nowrap !important; }
+}
+
+/* Very Large Screens (> 1250px) - Show all wide links, hide dropdown */
+@media (min-width: 1251px) {
+    .nav-item-wide { display: block !important; }
+    .nav-item-dropdown { display: none !important; }
     .nav-links { gap: 1.5rem; }
     .nav-links a { font-size: 0.9rem; padding: 0.4rem 0.8rem; letter-spacing: 0.5px; }
 }
 
-@media (max-width: 1150px) and (min-width: 769px) {
+/* Desktop & Tablet (769px to 1250px) - Collapse "About" into Dropdown BEFORE wrapping */
+@media (max-width: 1250px) and (min-width: 769px) {
+    .nav-item-wide { display: none !important; }
+    .nav-item-dropdown { display: block !important; }
     .nav-links { gap: 1rem; }
-    .nav-links a { font-size: 0.8rem; padding: 0.3rem 0.6rem; }
+    .nav-links a { font-size: 0.8rem; padding: 0.3rem 0.6rem; letter-spacing: 0.5px; }
 }
 
 @media (max-width: 768px) {
     .nav-item-wide { display: none !important; }
     .nav-item-dropdown { display: block !important; }
-    
+
     /* Open the dropdown statically in mobile drawer */
     .dropdown-menu {
         position: static !important;
@@ -897,7 +906,6 @@ img { max-width: 100%; height: auto; display: block; }
         border-radius: 50px !important;
     }
 }
-
 
 
 
