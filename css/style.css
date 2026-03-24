@@ -873,7 +873,16 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 768px) {
     /* Absolutely prevent mobile nav container from wrapping */
     .nav-container { flex-wrap: nowrap !important; gap: 0.5rem; }
-    .navbar { padding: 0.5rem 1rem; width: 98%; }
+
+    /* Free the fixed drawer from being trapped inside the navbar coordinate space */
+    .navbar { 
+        padding: 0.5rem 1rem; 
+        width: 96%; 
+        left: 0; 
+        right: 0; 
+        margin: 0 auto; 
+        transform: none !important; 
+    }
     
     /* Shrink the logo slightly so everything fits comfortably */
     .logo-wrapper { font-size: 1rem; gap: 0.5rem; }
@@ -883,26 +892,14 @@ img { max-width: 100%; height: auto; display: block; }
     .nav-item-wide { display: block !important; }
     .nav-item-dropdown { display: none !important; }
 
-    /* Keep Donate button on main nav bar */
-    .nav-item-donate {
-        position: absolute; /* Relative to .navbar */
-        right: 60px; /* Leave space for hamburger */
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1002;
-    }
-    .nav-item-donate a.btn {
-        margin: 0 !important;
-        padding: 0.4rem 0.8rem !important;
-        font-size: 0.75rem !important;
-        border-radius: 50px !important;
-    }
+    /* Restored Donate button to natural flow in mobile drawer */
     
     /* On exceptionally small screens (< 380px), hide the word "Yeshiva" to make room for buttons */
     @media (max-width: 380px) {
         .hide-tiny { display: none; }
     }
 }
+
 
 
 
