@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', toggleMenu);
 
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            if (link.getAttribute('href') === 'javascript:void(0);') return; // Ignore dropdown toggle
             if (navLinks.classList.contains('active')) toggleMenu();
         });
     });
