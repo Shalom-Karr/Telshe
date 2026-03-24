@@ -152,6 +152,12 @@ img { max-width: 100%; height: auto; display: block; }
     background-color: rgba(74, 14, 23, 0.08); /* Soft burgundy bubble */
     color: var(--primary);
 }
+@media (max-width: 768px) {
+    .nav-links a.active:not(.btn) {
+        background-color: rgba(255, 255, 255, 0.1); 
+        color: var(--secondary);
+    }
+}
 
 
 
@@ -391,30 +397,43 @@ img { max-width: 100%; height: auto; display: block; }
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 1rem 0;
+        padding: 1rem;
         font-size: 1.125rem;
         font-weight: 600;
         color: var(--white);
         border-bottom: 1px solid rgba(255,255,255,0.05);
+        border-radius: var(--radius);
+    }
+    
+    /* Fix: Contrast and alignment for active links on dark background */
+    .nav-links a.active:not(.btn) {
+        background-color: rgba(255, 255, 255, 0.1); 
+        color: var(--secondary);
+    }
+    .nav-links a:hover:not(.btn) {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: var(--secondary);
     }
     
     .nav-links a.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.85rem 2.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
+        margin-top: 1.5rem;
+        justify-content: center;
+        border-bottom: none;
+        padding: 1rem;
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
     
-    .mobile-toggle { display: flex; align-items: center; justify-content: center; position: relative; z-index: 1001; width: 44px; height: 44px; border-radius: 8px; color: var(--primary);
+    .mobile-toggle { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+        z-index: 1001;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        color: var(--primary);
     }
     
     .mobile-overlay {
@@ -429,7 +448,7 @@ img { max-width: 100%; height: auto; display: block; }
         visibility: hidden;
         transition: all 0.4s ease;
         backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(4px);
     }
     .mobile-overlay.active {
         opacity: 1;
@@ -827,4 +846,6 @@ img { max-width: 100%; height: auto; display: block; }
     .nav-item-wide { display: block !important; }
     .nav-item-dropdown { display: none !important; }
 }
+
+
 
