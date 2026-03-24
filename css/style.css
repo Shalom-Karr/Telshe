@@ -843,15 +843,59 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--primary) !important;
 }
 
-@media (max-width: 1150px) and (min-width: 769px) {
+/* Global Dropdown Rule (Desktop & Tablet) */
+@media (min-width: 769px) {
     .nav-item-wide { display: none !important; }
     .nav-item-dropdown { display: block !important; }
-    .nav-links a { font-size: 0.8rem; padding: 0.3rem 0.6rem; letter-spacing: 0.5px; }
-    .nav-links { gap: 1rem; }
+    .nav-links { gap: 1.5rem; }
+    .nav-links a { font-size: 0.9rem; padding: 0.4rem 0.8rem; letter-spacing: 0.5px; }
 }
+
+@media (max-width: 1150px) and (min-width: 769px) {
+    .nav-links { gap: 1rem; }
+    .nav-links a { font-size: 0.8rem; padding: 0.3rem 0.6rem; }
+}
+
 @media (max-width: 768px) {
-    .nav-item-wide { display: block !important; }
-    .nav-item-dropdown { display: none !important; }
+    .nav-item-wide { display: none !important; }
+    .nav-item-dropdown { display: block !important; }
+    
+    /* Open the dropdown statically in mobile drawer */
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        border: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        padding-left: 1rem !important;
+        border-left: 2px solid rgba(255, 255, 255, 0.1) !important;
+        margin-left: 1rem !important;
+        margin-top: 0.5rem !important;
+        gap: 0;
+    }
+    .dropdown-menu a {
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem !important;
+        border-bottom: none !important;
+    }
+
+    /* Keep Donate button on main nav bar */
+    .nav-item-donate {
+        position: absolute; /* Relative to .navbar */
+        right: 60px; /* Leave space for hamburger */
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1002;
+    }
+    .nav-item-donate a.btn {
+        margin: 0 !important;
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.8rem !important;
+        border-radius: 50px !important;
+    }
 }
 
 
