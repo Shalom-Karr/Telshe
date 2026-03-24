@@ -898,9 +898,9 @@ img { max-width: 100%; height: auto; display: block; }
         border-radius: 50px !important;
     }
     
-    /* On exceptionally small screens (< 380px), hide the text "Telshe Yeshiva" to make room for buttons */
+    /* On exceptionally small screens (< 380px), hide the word "Yeshiva" to make room for buttons */
     @media (max-width: 380px) {
-        .logo-wrapper span { display: none; }
+        .hide-tiny { display: none; }
     }
 }
 
