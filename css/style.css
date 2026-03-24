@@ -380,10 +380,10 @@ img { max-width: 100%; height: auto; display: block; }
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -320px;
         left: auto;
         width: 320px;
-        max-width: 85vw;
+        max-width: 80vw; /* Prevent overflowing on tiny screens */
         height: 100dvh;
         background: #111827;
         flex-direction: column;
@@ -396,10 +396,10 @@ img { max-width: 100%; height: auto; display: block; }
         z-index: 1000;
         overflow-y: auto;
     }
-    .nav-links.active { right: 0; }
-    
+    .nav-links.active { right: 0 !important; }
+
     .nav-links li { width: 100%; margin-bottom: 0.5rem; }
-    
+
     .nav-links a {
         display: flex;
         align-items: center;
@@ -411,17 +411,17 @@ img { max-width: 100%; height: auto; display: block; }
         border-bottom: 1px solid rgba(255,255,255,0.05);
         border-radius: var(--radius);
     }
-    
+
     /* Fix: Contrast and alignment for active links on dark background */
     .nav-links a.active:not(.btn) {
-        background-color: rgba(255, 255, 255, 0.1); 
+        background-color: rgba(255, 255, 255, 0.1);
         color: var(--secondary);
     }
     .nav-links a:hover:not(.btn) {
         background-color: rgba(255, 255, 255, 0.05);
         color: var(--secondary);
     }
-    
+
     .nav-links a.btn {
         margin-top: 1.5rem;
         justify-content: center;
@@ -430,24 +430,24 @@ img { max-width: 100%; height: auto; display: block; }
         color: var(--primary);
         background-color: var(--secondary);
     }
-    
-    .mobile-toggle { 
+
+    .mobile-toggle {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative; 
+        position: relative;
         z-index: 1001;
         width: 44px;
         height: 44px;
         border-radius: 8px;
         color: var(--primary);
     }
-    
+
     .mobile-overlay {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw; /* Cover full viewport width */
         height: 100dvh;
         background: rgba(15, 23, 42, 0.8);
         z-index: 999;
@@ -461,8 +461,7 @@ img { max-width: 100%; height: auto; display: block; }
         opacity: 1;
         visibility: visible;
     }
-}
-/* Modernization Upgrades */
+}/* Modernization Upgrades */
 .section-title {
     font-size: 2.75rem;
     color: var(--primary);
