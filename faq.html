@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Telshe Yeshiva Cleveland</title>
+    <meta name="description" content="Frequently Asked Questions about Rabbinical College of Telshe, our academic programs, admissions, and campus life in Wickliffe, Ohio.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shalomkarr.github.io/Telshe/faq.html">
+    <meta property="og:title" content="FAQ | Telshe Yeshiva Cleveland">
+    <meta property="og:description" content="Frequently Asked Questions about Rabbinical College of Telshe, our academic programs, admissions, and campus life in Wickliffe, Ohio.">
+    <meta property="og:image" content="https://shalomkarr.github.io/Telshe/img/og-image.png">
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shalomkarr.github.io/Telshe/faq.html">
+    <meta property="twitter:title" content="FAQ | Telshe Yeshiva Cleveland">
+    <meta property="twitter:description" content="Frequently Asked Questions about Rabbinical College of Telshe, our academic programs, admissions, and campus life in Wickliffe, Ohio.">
+    <meta property="twitter:image" content="https://shalomkarr.github.io/Telshe/img/og-image.png">
+
+    <!-- JSON-LD Local Business & College Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollegeOrUniversity",
+      "name": "Rabbinical College of Telshe",
+      "alternateName": "Telshe Yeshiva Cleveland",
+      "image": "https://shalomkarr.github.io/Telshe/img/telshe-logo.png",
+      "@id": "https://shalomkarr.github.io/Telshe/",
+      "url": "https://shalomkarr.github.io/Telshe/",
+      "telephone": "+1-440-943-5300",
+      "email": "info@telsheyeshiva.edu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "28400 Euclid Ave",
+        "addressLocality": "Wickliffe",
+        "addressRegion": "OH",
+        "postalCode": "44092",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6025,
+        "longitude": -81.4722
+      }
+    }
+    </script>
+    
+    <!-- JSON-LD FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Telshe Yeshiva located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Yeshiva is located on a sprawling 57-acre campus at 28400 Euclid Avenue in Wickliffe, Ohio, a suburb of Cleveland."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What programs are offered at the Yeshiva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Telshe Yeshiva offers a comprehensive theological and academic curriculum including the Mechina (High School), undergraduate and graduate Rabbinical programs in the Bais Medrash, and advanced Kollel study."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 'Telzer Derech'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 'Telzer Derech' refers to the Yeshiva's historic, rigorous approach to Talmudic study established in Lithuania. It emphasizes deep inductive reasoning, precise logic (Higayon), clear conceptual understanding (Havanah), and intense character development (Mussar)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I arrange a Yahrzeit dedication or Kaddish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can support the Yeshiva and elevate a Neshama through our Memorial page. Options include sponsoring a day of learning, arranging for Kaddish to be recited during the year of mourning, or dedicating a permanent memorial plaque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can prospective bochurim visit the campus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, prospective talmidim and their parents are encouraged to visit our Makom Torah. Please contact the Yeshiva office at (440) 943-5300 or email info@telsheyeshiva.edu to arrange a visit."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      .faq-container { max-width: 800px; margin: 0 auto; }
+      .faq-item {
+          background: var(--white);
+          border: 1px solid rgba(0,0,0,0.05);
+          border-radius: var(--radius);
+          margin-bottom: 1.5rem;
+          overflow: hidden;
+          transition: var(--transition);
+          box-shadow: var(--shadow-sm);
+      }
+      .faq-item:hover {
+          border-color: var(--secondary);
+          box-shadow: var(--shadow-md);
+      }
+      .faq-question {
+          width: 100%;
+          text-align: left;
+          padding: 1.5rem 2rem;
+          background: none;
+          border: none;
+          font-size: 1.15rem;
+          font-weight: 700;
+          color: var(--primary);
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-family: 'Playfair Display', serif;
+      }
+      .faq-question svg {
+          color: var(--secondary);
+          transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+          flex-shrink: 0;
+          margin-left: 1rem;
+      }
+      .faq-answer {
+          padding: 0 2rem;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1), padding 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      .faq-item.active .faq-answer {
+          padding-bottom: 2rem;
+          max-height: 500px;
+      }
+      .faq-item.active .faq-question svg {
+          transform: rotate(180deg);
+      }
+      .faq-answer p {
+          color: var(--text-muted);
+          line-height: 1.7;
+          margin: 0;
+      }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Purim Banner -->
+    <div class="purim-banner">
+        <a href="https://www.charidy.com/TelshePURIM" target="_blank">
+            Support Telshe Yeshiva this Purim!
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="./img/telshe-logo.png" alt="Telshe Yeshiva Logo" class="logo-img">
+                <span>Telshe Yeshiva</span>
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"></path></svg>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Yeshiva</a></li>
+                <li><a href="rebbeim.html">Rebbeim</a></li>
+                <li><a href="memorial.html">Memorial</a></li>
+                <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="padding-top: 10rem; padding-bottom: 3rem; background: var(--white);">
+        <div class="container text-center fade-in">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--primary); margin-bottom: 1rem; font-weight: 700;">Frequently Asked Questions</h1>
+            <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">Information about academics, admissions, and campus life at the Rabbinical College of Telshe.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <section class="section bg-light" style="padding-top: 3rem; padding-bottom: 5rem;">
+        <div class="container">
+            <div class="faq-container fade-in">
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Where is Telshe Yeshiva located?
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Yeshiva is located on a sprawling 57-acre campus at 28400 Euclid Avenue in Wickliffe, Ohio, a suburb of Cleveland. The serene, academic environment provides an ideal Makom Torah for bochurim.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What programs are offered at the Yeshiva?
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Telshe Yeshiva offers a comprehensive theological and academic curriculum including the Mechina (High School for grades 9-12), undergraduate and graduate Rabbinical programs in the Bais Medrash, and advanced study in the Kollel.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the "Telzer Derech"?
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The "Telzer Derech" refers to the Yeshiva's historic, rigorous approach to Talmudic study established in Lithuania. It emphasizes deep inductive reasoning, precise logic (Higayon), clear conceptual understanding (Havanah), and intense character development through Mussar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I arrange a Yahrzeit dedication or Kaddish?
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can support the Yeshiva and elevate a Neshama through our <a href="memorial.html" style="color: var(--secondary); font-weight: 600;">Memorial page</a>. Options include sponsoring a day of learning, arranging for Kaddish to be recited by a Talmid Chacham during the year of mourning, or dedicating a permanent memorial plaque on campus.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can prospective bochurim visit the campus?
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, prospective talmidim and their parents are encouraged to visit our Makom Torah. Please contact the Yeshiva office at (440) 943-5300 or email info@telsheyeshiva.edu to arrange a visit and schedule a farher (admissions interview) with the Hanholah.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center fade-in" style="margin-top: 4rem;">
+                <p style="font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--primary); font-weight: 700;">Still have questions?</p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Contact the general office for further assistance.</p>
+                <a href="mailto:info@telsheyeshiva.edu" class="btn" style="border: 1px solid var(--primary); color: var(--primary);">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Brand / Logo (Left) -->
+            <div class="footer-brand">
+                <a href="index.html" style="color: var(--white); margin-bottom: 1.5rem; display: inline-flex; flex-direction: column; align-items: flex-start; text-decoration: none;">
+                    <img src="./img/telshe-logo.png" alt="Telshe Yeshiva Logo" style="height: 75px; margin-bottom: 0.75rem; object-fit: contain;">
+                    <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; line-height: 1.2;">Rabbinical College of Telshe</span>
+                </a>
+                <p style="margin-top: 0.5rem; color: #9ca3af; max-width: 350px;">A premier Makom Torah dedicated to Amalas Hatorah, Hashkafa, and building the next generation of Bnei Torah.</p>
+            </div>
+            
+            <!-- Navigation (Center) -->
+            <div class="footer-nav">
+                <h4 style="color: var(--white); margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                    <li><a href="index.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Home</a></li>
+                    <li><a href="about.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">About the Yeshiva</a></li>
+                    <li><a href="rebbeim.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Rebbeim</a></li>
+                    <li><a href="memorial.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Memorial</a></li>
+                    <li><a href="faq.html" style="color: var(--secondary); text-decoration: none; transition: color 0.3s ease;">FAQ</a></li>
+                    <li><a href="donate.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s ease;">Donate</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact (Right) -->
+            <div class="footer-contact">
+                <h4 style="color: var(--white); margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">Contact Us</h4>
+                <p style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" style="margin-top: 0.25rem; flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>28400 Euclid Ave<br>Wickliffe, OH 44092</span>
+                </p>
+                <p style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <a href="tel:4409435300" style="color: #9ca3af; text-decoration: none;">(440) 943-5300</a>
+                </p>
+                <p style="display: flex; align-items: center; gap: 0.75rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:info@telsheyeshiva.edu" style="color: #9ca3af; text-decoration: none;">info@telsheyeshiva.edu</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 2rem; text-align: center;">
+            <p style="margin: 0; font-size: 0.85rem; color: #64748b;">&copy; 2026 Rabbinical College of Telshe. All Rights Reserved.</p>
+            <a href="https://shalomkarr.pages.dev" target="_blank" rel="noopener noreferrer" class="built-by-btn">
+                <span class="built-by-bg"></span>
+                <span class="built-by-label">Built By</span>
+                <div class="built-by-name-wrapper">
+                    <span class="built-by-name">Shalom Karr</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="built-by-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

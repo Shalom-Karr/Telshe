@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@400;600&amp;display=swap');
+    </style>
+    
+    <!-- Base Background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0e17" />
+      <stop offset="100%" stop-color="#2a050b" />
+    </linearGradient>
+
+    <!-- Shadow for Logo -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="25" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+  </defs>
+
+  <!-- 1. Background Fill -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" />
+
+  <!-- 2. Campus Image Overlay with Blur and Blend -->
+  <image href="https://cdn.logo.cardknox.com/4/1/1/1/2/6289f198f9a5fb56b915b3355_paymentsite_3195.png?v=638454352410307296" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice" opacity="0.3" />
+  
+  <!-- 3. Gradient Overlay -->
+  <rect width="1200" height="630" fill="radial-gradient(circle at center, transparent 0%, rgba(74, 14, 23, 0.9) 100%)" />
+
+  <!-- 4. Content Center -->
+  <g transform="translate(600, 315)" text-anchor="middle">
+    
+    <!-- Logo -->
+    <image href="https://upload.wikimedia.org/wikipedia/en/8/8e/Telshe_Yeshiva_logo.png" x="-100" y="-180" width="200" height="200" preserveAspectRatio="xMidYMid meet" filter="url(#shadow)" />
+    
+    <!-- Title -->
+    <text x="0" y="80" font-family="'Playfair Display', serif" font-size="72" font-weight="700" fill="#ffffff" filter="url(#shadow)">
+      Rabbinical College of Telshe
+    </text>
+    
+    <!-- Subtitle / Location -->
+    <text x="0" y="140" font-family="'Inter', sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#d9ba85" text-transform="uppercase" filter="url(#shadow)">
+      A Premier Makom Torah • Wickliffe, Ohio
+    </text>
+    
+  </g>
+</svg>
