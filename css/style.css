@@ -866,30 +866,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 768px) {
-    .nav-item-wide { display: none !important; }
-    .nav-item-dropdown { display: block !important; }
-
-    /* Open the dropdown statically in mobile drawer */
-    .dropdown-menu {
-        position: static !important;
-        transform: none !important;
-        box-shadow: none !important;
-        background: transparent !important;
-        border: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        padding-left: 1rem !important;
-        border-left: 2px solid rgba(255, 255, 255, 0.1) !important;
-        margin-left: 1rem !important;
-        margin-top: 0.5rem !important;
-        gap: 0;
-    }
-    .dropdown-menu a {
-        color: rgba(255, 255, 255, 0.7) !important;
-        font-size: 1rem !important;
-        padding: 0.5rem 1rem !important;
-        border-bottom: none !important;
-    }
+    /* Revert mobile drawer back to simple flat links */
+    .nav-item-wide { display: block !important; }
+    .nav-item-dropdown { display: none !important; }
 
     /* Keep Donate button on main nav bar */
     .nav-item-donate {
